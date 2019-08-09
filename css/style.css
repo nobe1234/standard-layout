@@ -70,6 +70,100 @@ a:link, a:visited, a:hover, a:active {
     float: left;
     width: 660px;
 }
+/* hot-topic */
+.hot-topic {
+    display: block;
+    height: 300px;
+    margin-bottom: 30px;
+    box-shadow: 30px;
+    transition: opacity 0.15s;
+}
+.hot-topic:hover {
+    opacity: 0.85;
+}
+.hot-topic .image {
+    float: left;
+    width: 50%;
+    height: 100%;
+}
+.hot-topic .content {
+    position: relative;
+    float: left;
+    width: 50%;
+    height: 100%;
+    padding: 105px 25px 0;
+    background-color: #2d3d54;
+    line-height: 1.6;
+}
+.hot-topic .title {
+    margin-bottom: 15px;
+    color: #fff;
+    font-weight: normal;
+    font-size: 2.0rem;
+}
+.hot-topic .desc {
+    color: #ddc;
+}
+.hot-topic .date {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 140px;
+    padding: 4px;
+    background-color: #fff;
+    color: #2d3d54;
+    text-align: center;
+    letter-spacing: 1px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    line-height: 1;
+}
+/* hot-topicここまで */
+
+/* newsここから */
+.heading {
+    padding: 10px 12px;
+    background: url('../images/bg-slash.gif');
+    letter-spacing: 1px;
+    font-size: 1.6rem;
+}
+.scroll-list {
+    max-height: 220px;
+    overflow-y: auto;
+    margin-bottom: 30px;
+    list-style-type: none;
+}
+.scroll-list .scroll-item a {
+    display: block;
+    padding: 10px 15px;
+    color: #333;
+    font-size: 0;
+    transition: background-color 0.1s;
+}
+.scroll-list .scroll-item:nth-of-type(even) a {
+    background: url('../images/bg-slash.gif');
+}
+.scroll-list .scroll-item a:hover {
+    background-color: #fafaf8;
+}
+.scroll-list .date {
+    display: inline-block;
+    width: 19%;
+    font-size: 1.0rem;
+}
+.scroll-list .category {
+    display: inline-block;
+    width: 8%;
+    font-size: 1.0rem;
+}
+.scroll-list .title {
+    display: inline-block;
+    width: 73%;
+    padding-left: 15px;
+    font-size: 1.2rem;
+}
+
+/* サイドメニュー */
 .sidemenu {
     float: right;
     width: 275px;
@@ -83,7 +177,7 @@ a:link, a:visited, a:hover, a:active {
     clear: both;
 }
 /* 一時的に追加する確認用CSS */
-.header ,.main,.sidemenu,.footer {
+.sidemenu,.footer {
     border: 1px solid #aaa;
     background-color: #ccc;
 }
@@ -92,4 +186,8 @@ a:link, a:visited, a:hover, a:active {
 }
 .main, .sidemenu {
     height: 500px;
+}
+/* 非表示になる見出しのスタイル */
+.hidden {
+    display: none;
 }
