@@ -239,6 +239,7 @@ a:link, a:visited, a:hover, a:active {
 .ranking {
     margin-bottom: 30px;
     list-style-type: none;
+    counter-reset: ranking;
 }
 .ranking .ranking-item {
     margin-top: 15px;
@@ -263,7 +264,7 @@ a:link, a:visited, a:hover, a:active {
     vertical-align: top;
     line-height: 1.5;
     /* 追加 */
-    font-size: 10px;
+    font-size: 12px;
 }
 /* サイドメニュー　ランキング　順位の枠 */
 .ranking .order {
@@ -299,7 +300,8 @@ a:link, a:visited, a:hover, a:active {
     background-color: #a0541a;
 }
 .ranking .order::before {
-    content: '1';
+    content: counter(ranking);
+    counter-increment: ranking;
     display: inline-block;
     font-size: 1.0rem;
     -webkit-transform: rotate(-45deg);
