@@ -63,12 +63,13 @@ a:link, a:visited, a:hover, a:active {
 }
 .wrapper {
     width: 970px;
-    margin: 30px auto 40px;
+    /* width: px; */
+    margin: 0px auto 0px;
 }
 .main {
     display: block;
-    float: left;
-    width: 660px;
+    /* float: left; */
+    width: 970px;
 }
 /* hot-topic */
 .hot-topic {
@@ -123,6 +124,8 @@ a:link, a:visited, a:hover, a:active {
 /* newsここから */
 .heading {
     padding: 10px 12px;
+    width: 275px;
+    height: 40px;
     background: url('../images/bg-slash.gif');
     letter-spacing: 1px;
     font-size: 1.6rem;
@@ -230,17 +233,41 @@ a:link, a:visited, a:hover, a:active {
     width: 100%;
 }
 
+.box{
+    float: left;
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    padding: 0 20px 0 20px;
+  }
+  
+  .boxContainer{
+    overflow: hidden;
+  }
 /* サイドメニュー */
 .sidemenu {
-    float: right;
-    width: 275px;
+
+    /* float: ; */
+    /* display: inline-block; */
+    width: 970px;
+    margin: 0 auto 0;
 }
 /* サイドメニュー　ランキング 大枠 */
 .ranking {
+    /* display: inline-block; */
+    /* display: inline-flexbox; */
+
+    /* display: table-cell; */
     margin-bottom: 30px;
     list-style-type: none;
     counter-reset: ranking;
+    width: 275px;
 }
+/* .boxContainer{
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  } */
 .ranking .ranking-item {
     margin-top: 15px;
 }
